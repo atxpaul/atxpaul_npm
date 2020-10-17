@@ -12,5 +12,8 @@
         "Pablo",
         "atxpaul",
         "paul"
-    ]
+    ],
+    "license":"MIT",
+    "main":"index.js",
+    "repository": "atxpaul/atxpaul_npm"
 }
