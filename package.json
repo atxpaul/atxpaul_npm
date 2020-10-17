@@ -1,0 +1,7 @@
+{
+    "name": "atxpaul",
+    "version": "1.0.0",
+    "bin": {
+        "atxpaul": "index.js"
+    }
+}
