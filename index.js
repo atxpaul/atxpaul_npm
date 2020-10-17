@@ -1,11 +1,20 @@
 #!/usr/bin/env node
 
-
+//Dependencies
 const pkgJSON = require('./package.json');
 const welcome = require('cli-welcome');
 const chalk = require('chalk');
+const sym = require('log-symbols');
+
+//Stuff
 const log = console.log;
-const twitterClr = chalk.bgHex(`#1da1f2`).black
+const twitterClr = chalk.bgHex(`#1da1f2`).black;
+
+//Alerts
+const success = chalk.green;
+const info = chalk.blue;
+const warning = chalk.keyword(`orange`);
+const error = chalk.red;
 
 welcome({
     title:pkgJSON.name,
@@ -30,3 +39,16 @@ ${chalk.italic.yellow(`Team Leader | Javascript lover | Agile thinker | Rib cook
 
 ${twitterClr(` Twitter `)}: https://twitter.com/code4paul
 `)
+
+log(`
+${sym.success} ${success(` SUCCESS `)} Thanks for checking my npm!
+
+`);
+
+/*
+${sym.info} ${info(` INFO `)} You can be satisfied
+
+${sym.warning} ${warning(` WARNING `)} Stay alert for new updates
+
+${sym.error} ${error(` ERROR `)} No new updates soon
+*/
