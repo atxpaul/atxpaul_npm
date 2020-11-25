@@ -11,7 +11,7 @@ unhandled();
 
 welcome({
     title:pkgJSON.name,
-    tagLine:`Nice to meet ya fella!`,
+    tagLine:`Nice to meet ya!`,
     description:pkgJSON.description,
     version:pkgJSON.version,
     bgColor: `#FADC00`,
