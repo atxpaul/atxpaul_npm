@@ -2,14 +2,14 @@ const unhandled = require('cli-handle-unhandled');
 const welcome = require('cli-welcome');
 const pkgJSON = require('./../package.json');
 
-module.exports = () =>{
+module.exports = (minimal,clear) =>{
     
     
 unhandled();
 
 
 
-welcome({
+!minimal && welcome({
     title:pkgJSON.name,
     tagLine:`Nice to meet ya!`,
     description:pkgJSON.description,
@@ -17,7 +17,8 @@ welcome({
     bgColor: `#FADC00`,
     color: `#000000`,
     bold: true,
-    clear: true
+    clear
 
 })
+minimal && console.log(`AtxPaul`)
 }

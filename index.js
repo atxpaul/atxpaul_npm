@@ -21,15 +21,13 @@ const flags = cli.flags;
 
 //IIFE
 (async()=>{
-    init();
+    init(flags.minimal,flags.clear);
 
     input.includes('help') && cli.showHelp(0);
 
-    log(data.bio);
+    flags.bio && log(data.bio);
+    flags.social && log(data.social);
 
-    if (flags.social){
-        log(data.social);
-    }
     
     
     
