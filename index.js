@@ -2,12 +2,15 @@
 
 //Externals dependencies
 const alert = require('atx-alerts');
+const {Toggle}=require('enquirer');
+
 
 //Inner dependencies
 const init = require('./utils/init')
 const data = require ('./utils/data');
 const cli = require('./utils/cli')
 const debug = require('./utils/debug');
+const stats = require('./utils/stats')
 
 
 
@@ -21,14 +24,25 @@ const flags = cli.flags;
 
 //IIFE
 (async()=>{
+    //Init and help
     init(flags.minimal,flags.clear);
-
     input.includes('help') && cli.showHelp(0);
 
+    // const prompt=new Toggle({
+    //     name:'question',
+    //     message: 'Did you like enquirer'
+    // })
+
+    // const response = await prompt.run()
+
+    // console.log('Response: ', response)
+
+    //Print the info
     flags.bio && log(data.bio);
     flags.social && log(data.social);
 
-    
+    //Stats
+    await stats()
     
     
     alert({

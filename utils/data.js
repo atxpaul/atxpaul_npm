@@ -12,7 +12,7 @@ Hello fellas!
 
 ${chalk.blue.underline(`Pablo Pan Veira`)} - ${chalk.bgYellow.black.bold(` Javascript Developer `)}
 
-${chalk.italic.yellow(`Team Leader | Javascript lover | Agile thinker | Rib cooker`)}`
+${chalk.italic.yellow(`Project Leader | Javascript lover | Agile thinker | Rib cooker`)}`
 
 const msg={
     msg:`for checking my npm!`,

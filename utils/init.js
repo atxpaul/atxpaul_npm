@@ -1,5 +1,6 @@
 const unhandled = require('cli-handle-unhandled');
 const welcome = require('cli-welcome');
+const boxen = require('boxen')
 const pkgJSON = require('./../package.json');
 
 module.exports = (minimal,clear) =>{
@@ -20,5 +21,5 @@ unhandled();
     clear
 
 })
-minimal && console.log(`AtxPaul`)
+minimal && console.log((boxen(`AtxPaul`,{padding:1,dimBorder:true})))
 }
