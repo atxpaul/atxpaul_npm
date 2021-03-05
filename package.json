@@ -1,6 +1,6 @@
 {
     "name": "atxpaul",
-    "version": "2.0.0",
+    "version": "2.1.1",
     "description": "Get to know AtxPaul via NPX!",
     "bin": {
         "atxpaul": "index.js"
@@ -13,6 +13,7 @@
         "chalk": "^4.1.0",
         "cli-handle-error": "^4.4.0",
         "cli-handle-unhandled": "^1.1.1",
+        "cli-meow-help": "^2.0.2",
         "cli-welcome": "^2.2.2",
         "enquirer": "^2.3.6",
         "log-symbols": "^4.0.0",
