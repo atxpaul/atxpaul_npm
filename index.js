@@ -28,15 +28,6 @@ const flags = cli.flags;
     init(flags.minimal,flags.clear);
     input.includes('help') && cli.showHelp(0);
 
-    // const prompt=new Toggle({
-    //     name:'question',
-    //     message: 'Did you like enquirer'
-    // })
-
-    // const response = await prompt.run()
-
-    // console.log('Response: ', response)
-
     //Print the info
     flags.bio && log(data.bio);
     flags.social && log(data.social);
